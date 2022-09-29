@@ -1,0 +1,26 @@
+function CountPairs(arr, n)
+{
+    let res = 0;
+    let i = 0;
+    while (i < n) {
+        let number = arr[i];
+        let count = 1;
+        i++;
+
+        while (i < n && arr[i] == number) {
+            count++;
+            i++;
+            console.log(count)
+        }
+          
+        if (count >= 2) {
+            res = res + Math.floor(count / 2);
+            console.log( count)
+        }
+    }
+    return res;
+}
+CountPairs(arr, n)
+    
+ 
+ 
